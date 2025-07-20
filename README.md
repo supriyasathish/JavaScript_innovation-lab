@@ -1,13 +1,1 @@
-var name = "Supriya";
-let age = 25;
-const country = "India";
-// output 
-console.log("Name:", name);
-console.log("Age:", age);
-console.log("Country:", country);
-// modify output 
-name = "Nithya"; 
-age = 26;
 
-console.log("Updated Name:", name);
-console.log("Updated Age:", age);
