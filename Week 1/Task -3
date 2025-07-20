@@ -1,0 +1,30 @@
+let a = 5, b = 2;
+
+// Arithmetic
+console.log("Add:", a + b);
+
+// Assignment
+a += 3;
+console.log("After a += 3:", a);
+
+// Relational
+console.log("Is a > b?", a > b);
+
+// Logical
+let isAdult = true, hasID = false;
+console.log("Can enter?", isAdult && hasID);
+
+// Ternary
+let score = 45;
+let result = score >= 50 ? "Pass" : "Fail";
+console.log("Result:", result);
+
+// Bitwise
+console.log("5 & 2:", 5 & 2);
+
+// Increment / Decrement
+let x = 10;
+x++;
+console.log("After x++:", x);
+x--;
+console.log("After x--:", x);
