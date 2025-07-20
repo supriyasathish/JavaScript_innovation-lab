@@ -1,0 +1,40 @@
+let marks = 75;
+
+// If statement
+if (marks > 0) {
+  console.log("Marks are valid");
+}
+
+// If-Else statement
+if (marks >= 50) {
+  console.log("You passed the exam");
+} else {
+  console.log("You failed the exam");
+}
+
+// Else-If ladder
+if (marks >= 90) {
+  console.log("Grade: A");
+} else if (marks >= 75) {
+  console.log("Grade: B");
+} else if (marks >= 60) {
+  console.log("Grade: C");
+} else {
+  console.log("Grade: D");
+}
+
+// Switch statement
+let day = 2;
+switch (day) {
+  case 1:
+    console.log("Monday");
+    break;
+  case 2:
+    console.log("Tuesday");
+    break;
+  case 3:
+    console.log("Wednesday");
+    break;
+  default:
+    console.log("Another day");
+}
