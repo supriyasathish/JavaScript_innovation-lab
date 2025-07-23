@@ -1,0 +1,26 @@
+// Simple function 
+function greet(name) {
+  console.log("Hello, " + name + "!");
+}
+greet("Priya");  // Output: Hello, Alice!
+
+//Function with arbitrary number of arguments
+function sumAll() {
+  let total = 0;
+  for (let i = 0; i < arguments.length; i++) {
+    total += arguments[i];
+  }
+  console.log(total);
+}
+sumAll(1, 2, 3); // Output: 6
+
+// Calling and testing via console
+function multiply(a, b) {
+  return a * b;
+}
+console.log(multiply(3, 4)); // Output: 12
+
+
+
+
+
