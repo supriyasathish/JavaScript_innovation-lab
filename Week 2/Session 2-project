@@ -1,0 +1,29 @@
+let tasks = []; 
+const printTasks = () => {
+    console.log("Current Tasks:");
+    tasks.forEach((task, index) => console.log(`${index + 1}. ${task}`));
+};
+
+function addTask(task, callback) {
+    tasks.push(task);
+    callback();
+}
+
+const addMultipleTasks = function (...newTasks) {
+    newTasks.forEach(task => tasks.push(task));
+    printTasks();
+};
+
+function scopeDemo() {
+    let insideFunction = "I'm inside the function";
+    console.log(insideFunction);
+}
+let outsideFunction = "I'm outside the function";
+
+console.log(outsideFunction);
+scopeDemo();
+
+
+addTask("Learn JavaScript", printTasks);
+addTask("Build Task Manager", printTasks);
+addMultipleTasks("Test module", "Write documentation", "Submit assignment");
