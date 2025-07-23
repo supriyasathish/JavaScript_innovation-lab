@@ -1,0 +1,16 @@
+// Global scope
+const userName = "Priya";
+
+// Callback function
+function greet(name) {
+  console.log("Hello, " + name + "!");
+}
+
+function displayMessage(callback) {
+  // Local scope
+  let message = "Welcome to JavaScript!";
+  callback(userName); // Call the callback
+  console.log(message);
+}
+
+displayMessage(greet);
