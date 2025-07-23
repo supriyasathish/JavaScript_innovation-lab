@@ -1,2 +1,17 @@
+1. What is the difference between let and var?
+     let has block scope, while var has function scope.
+     let does not allow redeclaration in the same scope, but var does.
+2. What will be the output of 5 + '5' in JavaScript?
+   Output: '55'
+3. Which operator is used for strict equality comparison?
+   Answer: ===
+4. What does the ternary operator do?
+    It is a shorthand for if-else conditions:
+    let result = (condition) ? valueIfTrue : valueIfFalse;
+
+
+
+
+
 
 
