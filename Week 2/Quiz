@@ -1,0 +1,20 @@
+1. What is the difference between if and else-if?
+   if checks the first condition.
+   else if checks another condition if the first is false.
+
+2. When is a switch statement preferred over multiple if-else statements?
+   When checking one variable against many possible values.
+
+3. Predict the output of the code using break inside a loop
+   break exits the loop completely when it runs.
+
+4. Difference between while and do-while loops
+   while checks the condition first.
+   do-while runs once, then checks the condition.
+
+5. What happens if the continue is executed inside a loop?
+  It skips to the next loop iteration, ignoring the code after continue.
+
+
+
+
