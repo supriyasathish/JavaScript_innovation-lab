@@ -1,0 +1,38 @@
+1. How do you define an arrow function? Give syntax.
+    const add = (a, b) => a + b;
+
+2. What is a callback function? Why is it useful?
+   A callback is a function passed to another function to be called later.
+function greet(name) {
+  console.log("Hi, " + name);
+}
+
+function welcome(callback) {
+  callback("Priya");
+}
+
+welcome(greet); // Output: Hi, Ravi
+
+
+3. How do function expressions differ from function declarations?
+
+function sayHello() {
+  console.log("Hello");
+}
+
+
+const sayHi = function() {
+  console.log("Hi");
+};
+
+4. What is the difference between global and local scope?
+
+let globalVar = "I am global"; 
+function show() {
+  let localVar = "I am local"; 
+  console.log(globalVar); 
+  console.log(localVar);  
+}
+show();
+
+
