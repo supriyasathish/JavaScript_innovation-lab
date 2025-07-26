@@ -1,0 +1,10 @@
+let num = Math.random() * 100;
+console.log(Math.floor(num), Math.ceil(num));
+console.log(Math.min(5, 10, 2), Math.max(5, 10, 2));
+
+
+let text = "Hello JavaScript";
+console.log(text.toUpperCase(), text.toLowerCase());
+console.log(text.substring(0, 5));
+console.log(text.includes("Java"));
+console.log(text.replace("JavaScript", "World"));
