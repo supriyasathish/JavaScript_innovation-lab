@@ -1,0 +1,13 @@
+let nums = [1, 2, 3];
+let fruits = ["apple", "banana"];
+
+
+console.log(nums[0]);
+nums[1] = 5;
+
+console.log(fruits.length);
+
+nums.push(4); nums.pop();
+fruits.unshift("mango"); fruits.shift();
+
+console.log(nums, fruits);
