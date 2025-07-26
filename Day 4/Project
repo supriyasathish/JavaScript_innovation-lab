@@ -1,0 +1,25 @@
+let students = [
+  { name: "priya", score: 88.7 },
+  { name: "sam", score: 45.3 },
+  { name: "Karan", score: 91.2 }
+];
+students = students.map(s => ({
+  name: s.name.charAt(0).toUpperCase() + s.name.slice(1),
+  score: Math.round(s.score)
+}));
+
+
+students.forEach(s => console.log(`${s.name}: ${s.score}`));
+
+
+let results = students.map(s => ({
+  name: s.name,
+  status: s.score >= 50 ? "Pass" : "Fail"
+}));
+
+
+for (let s of students) {
+  if (s.score > 85) {
+    console.log(`Congrats, ${s.name}!`);
+  }
+}
