@@ -1,5 +1,29 @@
-What does Math.floor(4.7) return?
+1.What does Math.floor(4.7) return?
+    Math.floor(4.7) returns 4
 
-Answer:
-   Math.floor(4.7) returns 4
+2.How to convert a string to uppercase?
+
+    let str = "hello";
+    let upperStr = str.toUpperCase();
+   console.log(upperStr); // Output: "HELLO"
+
+3.What is the difference between forEach and map?
+  forEach is used to run a function on each array element but doesn't return anything.
+  map also runs a function on each element but returns a new array with the results.
+
+
+4.What does for-in iterate over in arrays
+  for-in loops iterate over the array indices (keys), not the values.
+
+  let arr = ['a', 'b', 'c'];
+
+   for (let i in arr) {
+    console.log(i); 
+
+ 5.Predict the output of the code using .map() on an array
+
+   let nums = [1, 2, 3];
+   let squares = nums.map(n => n * n);
+   console.log(squares); // Output: [1, 4, 9]
+
 
