@@ -1,0 +1,26 @@
+let numbers = [1, 2, 3, 4, 5];
+
+console.log(" Using forEach to print elements:");
+numbers.forEach(function(num) {
+    console.log(num);
+});
+
+console.log("\n Using map to square the numbers:");
+let squaredNumbers = numbers.map(function(num) {
+    return num * num;
+});
+console.log(squaredNumbers);  // Output: [1, 4, 9, 16, 25]
+
+console.log("\n Using for-in loop to loop over indexes:");
+for (let index in numbers) {
+    console.log(`Index: ${index}, Value: ${numbers[index]}`);
+}
+
+console.log("\n Using for-of loop to loop over values:");
+for (let value of numbers) {
+    console.log(`Value: ${value}`);
+}
+
+console.log("\n Comparing outputs:");
+console.log("Original array:", numbers);
+console.log("Squared array (using map):", squaredNumbers);
