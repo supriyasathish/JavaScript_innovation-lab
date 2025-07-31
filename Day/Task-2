@@ -1,0 +1,15 @@
+const student = {
+  name: 'priya',
+  age: 20,
+  
+  // Method 
+  showInfo() {
+    console.log(`Name: ${this.name}, Age: ${this.age}`);
+  }
+};
+
+// Access and modify 
+student.age = 21;
+
+// Call method
+student.showInfo();
