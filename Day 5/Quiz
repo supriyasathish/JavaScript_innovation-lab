@@ -1,0 +1,28 @@
+1. What does filter() return?
+      An array of elements that pass the test implemented by the callback function.
+
+
+2. How does reduce() work in JavaScript?
+     It executes a reducer function on each array element and returns a single value.
+
+
+3. Difference between slice() and splice()?
+     slice() returns a portion of an array without changing it; splice() changes the array by adding/removing elements.
+
+
+4. What is the spread operator used for?
+      To expand elements of an array or object.
+
+
+5. How to define a method inside an object?
+   syntax:
+   let obj = {  
+      greet() { return "Hello"; }  
+    };
+
+
+6. What does destructuring do?
+     It extracts values from arrays or properties from objects into variables.
+
+
+
