@@ -1,0 +1,27 @@
+//filter()
+const numbers = [5, 12, 8, 20, 3];
+const filtered = numbers.filter(num => num > 10);
+console.log(filtered); // [12,20]
+//reduce()
+const nums = [1, 2, 3, 4];
+const sum = nums.reduce((acc, val) => acc + val, 0);
+console.log(sum); // 10
+//reduce ()
+const words = ['Hello', 'World'];
+const sentence = words.reduce((acc, val) => acc + ' ' + val);
+console.log(sentence); // "Hello World"
+//slice()
+const arr = [1, 2, 3, 4, 5];
+const sliced = arr.slice(1, 4);
+console.log(sliced); // [2, 3, 4]
+//slice
+const items = ['a', 'b', 'c', 'd'];
+items.splice(1, 2, 'x', 'y'); // remove 2 items from index 1, add 'x' and 'y'
+console.log(items); // ['a', 'x', 'y', 'd']
+//spread operator 
+const a = [1, 2];
+const b = [3, 4];
+const clone = [...a];
+const merged = [...a, ...b];
+console.log(clone); // [1, 2]
+console.log(merged); // [1, 2, 3, 4]
