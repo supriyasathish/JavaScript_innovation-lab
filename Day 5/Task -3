@@ -1,0 +1,13 @@
+const user = {
+  name: "Kiran",
+  city: "Chennai"
+};
+
+// Destructuring with default value
+const { name, age = 25 } = user;
+console.log(name); // Kiran
+console.log(age);  // 25 (default)
+
+// Using spread to clone and update
+const newUser = { ...user, age: 30 };
+console.log(newUser);
