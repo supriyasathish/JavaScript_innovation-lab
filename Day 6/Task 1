@@ -1,0 +1,15 @@
+
+const user = {
+  name: "Priya",
+  age: 25,
+  address: { city: "Paris", zip: 75000 }
+};
+const { name, address: { city } } = user;
+console.log(name, city); // Alice Paris
+
+console.log(user.age);       
+console.log(user["address"]); 
+
+for (let key in user) {
+  console.log(key, user[key]);
+}
