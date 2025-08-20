@@ -1,0 +1,6 @@
+How do you destructure an object with nested properties?
+
+You destructure an object with nested properties by mirroring its structure using curly braces.
+example:
+const { contact: { email, phone } } = person;
+
