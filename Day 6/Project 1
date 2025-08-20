@@ -1,0 +1,32 @@
+let contacts = [
+  { name: "Priya", phone: "123", email: "alice@mail.com", display() { console.log(`${this.name} | ${this.phone} | ${this.email}`); } },
+  { name: "Kayal", phone: "456", email: "bob@mail.com", display() { console.log(`${this.name} | ${this.phone} | ${this.email}`); } }
+];
+
+const { name, phone } = contacts[0];
+console.log(name, phone); 
+
+
+console.log(contacts[0].email);
+console.log(contacts[1]["name"]);
+
+contacts.forEach(c => c.display());
+
+
+function addContacts(...newContacts) {
+  contacts.push(...newContacts);
+}
+addContacts({ name: "Charlie", phone: "789", email: "c@mail.com", display() { console.log(`${this.name} | ${this.phone} | ${this.email}`); } });
+
+const more = [{ name: "David", phone: "000", email: "d@mail.com", display() { console.log(`${this.name} | ${this.phone} | ${this.email}`); } }];
+contacts = [...contacts, ...more];
+
+
+const utils = { show(city) { console.log(`${this.name} from ${city}`); } };
+const person = { name: "Eve" };
+utils.show.call(person, "London");
+utils.show.apply(person, ["Paris"]);
+utils.show.bind(person, "Tokyo")();
+
+
+contacts.forEach(c => c.display());
