@@ -1,0 +1,21 @@
+const products = [
+  { id: 1, name: "Laptop", price: 1000 },
+  { id: 2, name: "Phone", price: 500 }
+];
+
+
+function addUsers(...users) {
+  console.log(users);
+}
+addUsers("Priya", "Nithya", "Kayal");
+
+const arr1 = [1, 2];
+const arr2 = [3, 4];
+const merged = [...arr1, ...arr2];
+console.log(merged); 
+
+
+function showProduct({ id, name, price }) {
+  console.log(`${id}: ${name} - $${price}`);
+}
+showProduct(products[0]);
