@@ -1,0 +1,56 @@
+let employees = [
+  { id: 1, name: "Priya", position: "Dev", salary: 5000, dept: "IT", available: true },
+  { id: 2, name: "Kayal", position: "Manager", salary: 7000, dept: "HR", available: false }
+];
+
+
+function addEmployee(emp) { employees.push(emp); }
+
+
+function removeEmployee(id) { employees = employees.filter(e => e.id !== id); }
+
+
+function updateEmployee(id, newData) {
+  let emp = employees.find(e => e.id === id);
+  if (emp) Object.assign(emp, newData);
+}
+
+
+function displayEmployees() { employees.forEach(e => console.log(e)); }
+
+
+function searchEmployee(name) { 
+  return employees.filter(e => e.name.toLowerCase().includes(name.toLowerCase())); 
+}
+function totalActiveSalary() { 
+  return employees.filter(e => e.available).reduce((sum,e) => sum+e.salary,0); 
+}
+
+
+function deptReport() {
+  return employees.reduce((acc,e) => {
+    acc[e.dept] = (acc[e.dept]||0) + e.salary;
+    return acc;
+  },{});
+}
+
+function sortBySalary(order="asc") {
+  return [...employees].sort((a,b)=> order==="asc"?a.salary-b.salary:b.salary-a.salary);
+}
+
+function toggleAvailability(id) {
+  let emp = employees.find(e=>e.id===id);
+  if(emp) emp.available = !emp.available;
+}
+
+
+addEmployee({ id: 3, name: "Nithya", position: "Tester", salary: 4000, dept: "QA", available: true });
+updateEmployee(1, { salary: 5500 });
+removeEmployee(2);
+displayEmployees();
+console.log("Search:", searchEmployee("Charlie"));
+console.log("Total Active Salary:", totalActiveSalary());
+console.log("Dept Report:", deptReport());
+console.log("Sorted:", sortBySalary("desc"));
+toggleAvailability(3);
+displayEmployees();
