@@ -1,0 +1,11 @@
+let now = new Date();
+console.log("Now:", now);
+let birthday = new Date(2000, 5, 15, 10, 30); 
+console.log("Birthday:", birthday);
+console.log("Year:", now.getFullYear());
+console.log("Month:", now.getMonth() + 1);
+console.log("Date:", now.getDate());
+console.log("Hours:", now.getHours());
+console.log("Minutes:", now.getMinutes());
+console.log("ISO Format:", now.toISOString());
+console.log("Locale String:", now.toLocaleString());
