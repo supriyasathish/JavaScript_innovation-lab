@@ -1,0 +1,20 @@
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  greet() {
+    console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+  }
+}
+const person1 = new Person("Priya", 25);
+const person2 = new Person("Kayal", 30);
+person1.greet();  
+person2.greet();  
+const lostGreet = person1.greet;
+lostGreet(); 
+const boundGreet = person1.greet.bind(person1);
+boundGreet();
+
+  
