@@ -1,0 +1,15 @@
+class Student extends Person {
+  constructor(name, age, grade) {
+    super(name, age);  
+    this.grade = grade; 
+}
+greet() {
+    console.log(`Hi, I am ${this.name}, a student in grade ${this.grade}.`);
+}
+study() {
+    console.log(`${this.name} is studying hard!`);
+  }
+}
+const student1 = new Student("Priya", 20, "12th");
+student1.greet();   
+student1.study();   
